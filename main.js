@@ -69,9 +69,6 @@
   // app Vue instance
   const app = new Vue({
     store,
-    data: {
-      file: null
-    },
     el: '.wrapper',
 
     created () {
