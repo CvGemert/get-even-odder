@@ -28,7 +28,6 @@
         } else if (answer % 2 == -1) {
           state.newAnswer = answer + ' is an odd number'
         }
-
       },
       ADD_answer (state, answerObject) {
         console.log('add answer', answerObject)
