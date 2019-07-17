@@ -1,0 +1,33 @@
+<!doctype html>
+<html data-framework="vue">
+  <head>
+    <meta charset="utf-8">
+    <title>History</title>
+    <link rel="stylesheet" href="odd-styles.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="left history">
+        <nav>
+          <a href="/">Home</a>
+          <a href="history.html">History</a>
+        </nav>
+        <h1>Previously, on<br>Even<br>Odder</h1>
+        <p class="squiggly-thingy">~</p>
+        <p>Advanced scientific research revealed that...</p>
+      </header>
+      <div class="right">
+        <ul class="answer-list">
+          <li v-for="answer in answers"
+            :key="answer.id">
+          <label>{{ answer.title }}</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
